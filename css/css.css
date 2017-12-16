@@ -19,12 +19,12 @@ body {
   background-size: cover;
   padding-bottom: 60px;
 }
-.col-md-3 {
-  text-align: center;
-}
 /*Main*/
 main {
   margin-top: 2rem;
+}
+.phone {
+  text-align: center;
 }
 .phone {
   font-size: 20px;
@@ -120,16 +120,41 @@ main {
   background-color: #fff;
   color: #565656;
 }
-.main-button {
-  color: #fff;
-  text-transform: uppercase;
-  background: #fbb102;
-  height: 50px;
-  border-radius: 8px;
-  width: 220px;
-  margin: 10px 0px;
-  font-size: 12px;
-  border: none;
-  font-weight: 800;
+.form button {
   width: 100%;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #e29f02;
+}
+.phone-block {
+  text-align: right;
+}
+.button-header {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .phone-block {
+    text-align: center;
+  }
+  .main-content {
+    text-align: center;
+  }
+  .main-content .h-header {
+    margin-top: 30px;
+  }
+  .main-content .fakt {
+    text-align: center;
+  }
+  .form {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    background-position: top left;
+  }
+  .header {
+    text-align: center;
+  }
 }

@@ -40,12 +40,12 @@ body{
 	background-size: cover;
 	padding-bottom:60px;
 }
-  .col-md-3{
-  text-align:center;
-  }
  /*Main*/
  main{
  	margin-top:2rem;
+ }
+ .phone{
+ 	text-align:center;
  }
  .phone{
  	font-size:20px;
@@ -53,6 +53,7 @@ body{
  	display:inline-block;
  	margin:1.85rem 0rem;
  	font-weight:600;
+
  }
  .button{
  	color:#fff;
@@ -142,8 +143,43 @@ body{
     	color:#565656;
 
     }
+    button{
+    	width:100%;
+    }
 }
-.main-button{
-    .button;
-    width:100%;
+
+.button:hover{
+	cursor:pointer;
+	background-color: darken(@btn-color, 5%);
+}
+.phone-block{
+	text-align:right;
+}
+.button-header{
+  text-align:center;
+}
+@media(max-width: 991px){
+	.phone-block{
+		text-align:center;
+	}
+	.main-content{
+		text-align:center;
+		.h-header{
+			margin-top:30px;
+		}
+		.fakt{
+			text-align:center;
+		}
+	}
+	.form{
+		margin-top:20px;
+	}
+}
+@media(max-width: 767px){
+	body{
+		background-position: top left;
+	}
+  .header{
+    text-align:center;
+  }
 }
