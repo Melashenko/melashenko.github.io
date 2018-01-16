@@ -358,7 +358,7 @@ main {
           transform: translateY(-50%);
   width: 3rem;
   height: 3rem;
-  background: black;
+  background: url(..//img/problems/good.svg) no-repeat center;
 }
 .problems .problems-list-good h3 {
   font-size: 21px;
@@ -379,7 +379,7 @@ main {
           transform: translateY(-50%);
   width: 3rem;
   height: 3rem;
-  background: black;
+  background: url(..//img/problems/bad.svg) no-repeat center;
 }
 .problems .problems-list-bad h3 {
   font-family: 'ProximaNova_Bold', sans-serif;
@@ -388,8 +388,11 @@ main {
   font-weight: 700;
   opacity: 0.5;
 }
+.problems .problems-list-bad li {
+  margin-top: 4rem;
+}
 .problems .problems-list {
-  padding: 4rem;
+  padding: 3rem;
   min-height: 45rem;
 }
 .problems .problems-list ul {
