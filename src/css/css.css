@@ -46,7 +46,7 @@ main {
   font-weight: 800;
 }
 .h-header {
-  font-family: 'ProximaNova_Reg', sans-serif;
+  font-family: 'ProximaNova_Bold', sans-serif;
   margin-top: 100px;
   text-transform: uppercase;
   font-size: 40px;
@@ -96,7 +96,7 @@ main {
   font-weight: 400;
 }
 .form strong {
-  font-family: 'ProximaNova_Reg', sans-serif;
+  font-family: 'ProximaNova_Bold', sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -123,6 +123,24 @@ main {
 }
 .form button {
   width: 100%;
+}
+.main-form-input {
+  display: block;
+  margin: 25px 0px;
+  height: 6.5rem;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.label {
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  background-color: #fff;
+  color: #565656;
 }
 .button:hover {
   cursor: pointer;
@@ -151,7 +169,7 @@ main {
   width: 70%;
 }
 .features .features-header {
-  font-family: 'ProximaNova_Reg', sans-serif;
+  font-family: 'ProximaNova_Bold', sans-serif;
   margin: 70px 0px;
   font-weight: 800;
 }
@@ -174,7 +192,503 @@ main {
   background: url(../img/features/right.png) no-repeat;
   right: 0%;
 }
+/*Секция с ценами*/
+.price {
+  color: #fff;
+  background: #358513 url(..//img/price/bg-price.png) center;
+}
+.price .price-btn {
+  margin-top: 12rem;
+  width: 300px;
+}
+.price .box-price {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  color: #1a1820;
+}
+.price .box-price .header-box-price {
+  font-size: 19px;
+  font-weight: 700;
+  padding: 4rem 0;
+}
+.price .box-price img {
+  width: 100%;
+  max-width: 60rem;
+  padding: 3rem 1rem 3rem 1rem;
+}
+.price .box-price span {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-bottom: 1rem;
+}
+.price .box-price ul {
+  margin-top: 3rem;
+  min-height: 19rem;
+}
+.price .box-price li::before {
+  content: "";
+  display: inline-block;
+  margin-right: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(..//img/price/check.svg) no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+.price .box-price li {
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-family: 'ProximaNova_Bold', sans-serif;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.price .price-header {
+  margin-top: 12rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.p-price {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: 'ProximaNova_Bold', sans-serif;
+  text-align: center;
+}
+/*Блок с отзывами*/
+.feedback-header {
+  padding: 10rem 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.feedback {
+  position: relative;
+  background: url(..//img/feedback/bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.feedback .feedback-text {
+  position: relative;
+  border: 2px solid #358513;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 15px;
+  line-height: 18px;
+  font-style: italic;
+}
+.feedback .feedback-text::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 4rem;
+  top: -2rem;
+  background: #fff;
+  border: 2px solid green;
+  border-bottom: none;
+  border-top-right-radius: 100px;
+}
+.feedback .media {
+  margin-top: 4rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  min-height: 5rem;
+}
+.feedback .media h4 {
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+.feedback p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.feedback-slider {
+  z-index: 99;
+  padding: 5rem 6rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+}
+.feedback-btn {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  width: 6rem;
+  height: 6rem;
+  background-color: #358513;
+  background-size: 100%;
+}
+.feedback .feedback-prev-btn {
+  left: -6rem;
+}
+.feedback .feedback-next-btn {
+  right: -6rem;
+}
+/*Все опасения*/
+.problems {
+  position: relative;
+}
+.problems h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.problems li {
+  margin-bottom: 2rem;
+}
+.problems .problems-list-good {
+  margin-top: 5rem;
+  border: 4px solid #358513;
+}
+.problems .problems-list-good li:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background: url(..//img/problems/good.svg) no-repeat center;
+}
+.problems .problems-list-good h3 {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+.problems .problems-list-bad {
+  margin-top: 5rem;
+  border: 4px solid #e8e8e8;
+}
+.problems .problems-list-bad li:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background: url(..//img/problems/bad.svg) no-repeat center;
+}
+.problems .problems-list-bad h3 {
+  font-family: 'ProximaNova_Bold', sans-serif;
+  color: #313131;
+  font-size: 21px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+.problems .problems-list-bad li {
+  margin-top: 4rem;
+}
+.problems .problems-list {
+  padding: 3rem;
+  min-height: 45rem;
+}
+.problems .problems-list ul {
+  margin-top: 5rem;
+  list-style: none;
+}
+.problems .problems-list ul li {
+  position: relative;
+  padding-left: 3rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+.woomen {
+  position: absolute;
+  width: 21%;
+  height: 85%;
+  top: 30%;
+  left: 37%;
+}
+/*Форма обрат связи*/
+.feedback-form {
+  padding: 4rem 10rem;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 6rem;
+}
+.feedback-form h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.feedback-form label {
+  top: 23%;
+}
+.hand {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 20%;
+  height: 20%;
+}
+/*Схема работы*/
+.sheme {
+  background: url(..//img/sheme/ryka.png) bottom -20rem right -20rem no-repeat;
+}
+.sheme p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+.sheme h2 {
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.sheme .sheme-block {
+  min-height: 35rem;
+}
+.sheme .sheme-block p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  font-family: 'ProximaNova_Reg', sans-serif;
+}
+.sheme .sheme-block h4 {
+  margin: 3rem 0;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+.sheme .sheme-block img {
+  margin: 5rem 0 0 0;
+  width: 120px;
+  height: 120px;
+}
+/*Всё на 100% включено*/
+.all-inclusive {
+  background-color: #f5f5f5;
+}
+.h-all-inclusive h2 {
+  margin-top: 10rem;
+  color: #358513;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 4rem;
+  text-align: center;
+}
+.h-all-inclusive p {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+.circle {
+  display: inline-block;
+  background: #358513;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.circle-border {
+  text-align: center;
+  font-size: 20px;
+  line-height: 4rem;
+  border: 2px solid green;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0.2rem;
+  color: #fff;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+.media {
+  min-height: 15rem;
+}
+.media .media-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6rem;
+  padding-top: 1.6rem;
+  margin-left: 0.4rem;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+/*Материалы*/
+.materials {
+  background: url(..//img/materials/bg-materials.jpg) center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 10rem;
+}
+.materials h3 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'ProximaNova_Bold', sans-serif;
+  margin-bottom: 4rem;
+}
+.materials img {
+  min-height: 20rem;
+  display: block;
+  margin: auto;
+}
+.materials h2 {
+  padding-top: 12rem;
+  margin-bottom: 7rem;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.materials p {
+  margin-bottom: 5rem;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+/*Посмотрите как мы работаем*/
+.works {
+  background: url(..//img/bg.png) center no-repeat;
+  background-size: cover;
+  padding-bottom: 16rem;
+}
+/*Услуги*/
+.poslug {
+  background-color: #286b0a;
+  text-align: center;
+  padding: 2rem;
+  color: #fcfcfc;
+}
+.poslug h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 4rem;
+  margin-top: 10rem;
+}
+.poslug img {
+  width: 100%;
+  max-width: 500px;
+}
+.poslug p {
+  font-size: 19px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 7rem;
+}
+.poslug .p-poslug {
+  margin: 3rem 0;
+}
+.poslug .button-poslug {
+  width: 150px;
+  height: 50px;
+}
+.poslug .poslug-content {
+  min-height: 50rem;
+}
+/**/
+.contacts {
+  background: #ffffff url(..//img/bg-contacts.jpg) center no-repeat;
+  background-size: cover;
+  padding-top: 8rem;
+}
+.contacts h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.contacts a {
+  text-decoration: none;
+  margin-bottom: 4rem;
+}
+.contacts p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'ProximaNova_Reg', sans-serif;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.contacts .form-contacts {
+  margin-bottom: 7rem;
+  background-color: #fff;
+  padding: 5rem;
+}
+.contacts .form-contacts input {
+  width: 100%;
+}
+.contacts .form-contacts button {
+  width: 100%;
+}
+.contacts .label-contacts {
+  top: 7.5rem;
+}
+footer {
+  padding: 3rem 0;
+}
+footer .logo-kengyry {
+  text-align: right;
+}
+footer .footer-info {
+  text-align: center;
+}
+/*Модальное окно*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 4rem 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup .popup-content {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 4rem 6rem;
+  text-align: center;
+}
+.popup .popup-close {
+  position: absolute;
+  top: -1rem;
+  right: -2rem;
+  width: 2rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 3rem;
+}
+.popup h4 {
+  font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .problems .problems-list {
+    min-height: 53rem;
+  }
+}
 @media (max-width: 991px) {
+  .feedback label {
+    top: 0%;
+  }
+  .feedback .fotorama {
+    margin-bottom: 3rem;
+  }
   .phone-block {
     text-align: center;
   }
@@ -190,12 +704,49 @@ main {
   .form {
     margin-top: 20px;
   }
+  .price .price-btn {
+    margin-top: 2rem;
+  }
+  .price_btn {
+    text-align: center;
+  }
+  .hand {
+    display: none;
+  }
+  .problems .problems-list {
+    min-height: 40rem;
+  }
+  .problems .woomen {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
+  .feedback .feedback-p {
+    margin-left: 3rem;
+  }
+  .feedback .feedback-prev-btn {
+    left: 0rem;
+  }
+  .feedback .feedback-next-btn {
+    right: 0rem;
+  }
   main {
     background-position: top left;
   }
   .header {
+    text-align: center;
+  }
+  .hand {
+    display: none;
+  }
+  .sheme {
+    text-align: center;
+    background: none;
+  }
+  .sheme .sheme-block {
+    min-height: 20rem;
+  }
+  .sheme p {
     text-align: center;
   }
 }
