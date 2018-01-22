@@ -333,6 +333,9 @@ main {
   right: -6rem;
 }
 /*Все опасения*/
+.problems {
+  position: relative;
+}
 .problems h2 {
   font-size: 36px;
   font-weight: 700;
@@ -405,6 +408,13 @@ main {
   font-size: 16px;
   font-weight: 400;
 }
+.woomen {
+  position: absolute;
+  width: 21%;
+  height: 85%;
+  top: 30%;
+  left: 37%;
+}
 /*Форма обрат связи*/
 .feedback-form {
   padding: 4rem 10rem;
@@ -473,7 +483,7 @@ main {
   color: #358513;
   font-size: 48px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 4rem;
   text-align: center;
 }
 .h-all-inclusive p {
@@ -515,6 +525,124 @@ main {
   margin-left: 0.4rem;
   font-family: 'ProximaNova_Bold', sans-serif;
 }
+/*Материалы*/
+.materials {
+  background: url(..//img/materials/bg-materials.jpg) center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 10rem;
+}
+.materials h3 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'ProximaNova_Bold', sans-serif;
+  margin-bottom: 4rem;
+}
+.materials img {
+  min-height: 20rem;
+  display: block;
+  margin: auto;
+}
+.materials h2 {
+  padding-top: 12rem;
+  margin-bottom: 7rem;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.materials p {
+  margin-bottom: 5rem;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+/*Посмотрите как мы работаем*/
+.works {
+  background: url(..//img/bg.png) center no-repeat;
+  background-size: cover;
+  padding-bottom: 16rem;
+}
+/*Услуги*/
+.poslug {
+  background-color: #286b0a;
+  text-align: center;
+  padding: 2rem;
+  color: #fcfcfc;
+}
+.poslug h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 4rem;
+  margin-top: 10rem;
+}
+.poslug img {
+  width: 100%;
+  max-width: 500px;
+}
+.poslug p {
+  font-size: 19px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 7rem;
+}
+.poslug .p-poslug {
+  margin: 3rem 0;
+}
+.poslug .button-poslug {
+  width: 150px;
+  height: 50px;
+}
+.poslug .poslug-content {
+  min-height: 50rem;
+}
+/**/
+.contacts {
+  background: #ffffff url(..//img/bg-contacts.jpg) center no-repeat;
+  background-size: cover;
+  padding-top: 8rem;
+}
+.contacts h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.contacts a {
+  text-decoration: none;
+  margin-bottom: 4rem;
+}
+.contacts p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'ProximaNova_Reg', sans-serif;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.contacts .form-contacts {
+  margin-bottom: 7rem;
+  background-color: #fff;
+  padding: 5rem;
+}
+.contacts .form-contacts input {
+  width: 100%;
+}
+.contacts .form-contacts button {
+  width: 100%;
+}
+.contacts .label-contacts {
+  top: 7.5rem;
+}
+footer {
+  padding: 3rem 0;
+}
+footer .logo-kengyry {
+  text-align: right;
+}
+footer .footer-info {
+  text-align: center;
+}
 /*Модальное окно*/
 .popup {
   display: none;
@@ -549,6 +677,11 @@ main {
 .popup h4 {
   font-weight: 700;
 }
+@media (max-width: 1199px) {
+  .problems .problems-list {
+    min-height: 53rem;
+  }
+}
 @media (max-width: 991px) {
   .feedback label {
     top: 0%;
@@ -578,6 +711,12 @@ main {
     text-align: center;
   }
   .hand {
+    display: none;
+  }
+  .problems .problems-list {
+    min-height: 40rem;
+  }
+  .problems .woomen {
     display: none;
   }
 }
